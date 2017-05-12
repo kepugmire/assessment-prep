@@ -53,26 +53,56 @@ for (var i in anakinSkywalker) {
 }
 
 
-
 //14. Create a function called finder that takes in an array and a string and loops through the array
 //    to remove every instance of that string
+function finder(arr, str){
+  for (var i = 0; i > arr.length; i++);
+    if (arr[i] === str)
+      splice(i, 1);
+  }
 
 
 
 //15. Write a function called numChecker that takes in a parameter and checks to see if it is a number or a
   //number in a string (ie '12' or 12) - if so, return true, else return false
 
+function numChecker(num) {
+  if (num / 1) {
+    return true
+  }
+    return false
+}
 
 
 //16. Write a function called rightNow that returns a new date object
-
+  function rightNow() {
+    return new Date()
+  }
 
 
 //17. Write a function called whoAmI that takes in an object and returns the value of the
 //    object's name property, and if the object's name
 //    is undefined, return 'has amnesia'.
 
+function whoAmI(obj) {
+  if(obj.name === undefined) {
+      return "has amnesia";
+  } else {
+      return obj.name;
+  }
+}
 
 
 //18. Write a function called returnMe that takes in a num and a callback function and
 //    returns the result of the callback function invoked with the num as a parameter
+
+function returnMe(num, cb) {
+  return cb(num);
+}
+
+
+
+
+
+
+
